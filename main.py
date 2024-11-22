@@ -55,6 +55,10 @@ while True:
     else:
         temperatures_f.append(temp_temp)
 
-temperatures_f = [str(temp) for temp in temperatures_f]
+
+temperatures_f_str = [str(temp) for temp in temperatures_f]
 
 print(f'Temperatures entered: {", ".join(temperatures_f)}')
+
+average_temp_f = sum(temperatures_f) / len(temperatures_f)
+print(f'Average temperature: {average_temp_f}')
